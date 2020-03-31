@@ -17,8 +17,8 @@
 
         <ImageView
             android:id="@+id/ivLogo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
             android:layout_gravity="center"
             android:layout_marginTop="150dp"
             android:src="@drawable/logo1" />
@@ -27,13 +27,15 @@
             android:id="@+id/tvInicio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="150dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="5dp"
-            android:text="Inicio de sesion"
+            android:fontFamily="@font/roboto"
+            android:text="Inicio de sesión"
             android:textColor="#693AC2"
-            android:textSize="30dp"/>
+            android:textIsSelectable="false"
+            android:textSize="30dp" />
 
         <EditText
             android:id="@+id/etCorreo"
@@ -41,9 +43,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginStart="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
             android:hint="Correo"
+            android:fontFamily="@font/roboto"
             android:textSize="18dp" />
 
         <EditText
@@ -51,11 +54,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="5dp"
+            android:fontFamily="@font/roboto"
             android:hint="Contraseña"
-            android:textSize="18dp" />
+            android:textSize="18dp"/>
 
         <LinearLayout
             android:id="@+id/linearRegis"
@@ -63,8 +67,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="12dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:gravity="center"
             android:orientation="horizontal"
             android:visibility="visible">
@@ -73,9 +77,10 @@
                 android:id="@+id/tvSino"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Si no tienes cuenta:  "
+                android:text="Si no tienes una cuenta:  "
                 android:textColor="#000000"
-                android:textSize="20dp" />
+                android:textSize="22dp"
+                android:fontFamily="@font/roboto"/>
 
             <TextView
                 android:id="@+id/tvRegistrate"
@@ -83,7 +88,8 @@
                 android:layout_height="wrap_content"
                 android:text="Registrate"
                 android:textColor="#FF9800"
-                android:textSize="20dp" />
+                android:fontFamily="@font/roboto"
+                android:textSize="22dp" />
 
         </LinearLayout>
 
@@ -92,9 +98,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#FF9800"
-            android:text="Iniciar Sesion"
-            android:textSize="20dp"
-            android:textColor="#ffff" />
+            android:fontFamily="@font/roboto"
+            android:text="Iniciar Sesión"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:textSize="25dp"
+            android:padding="15dp"/>
 
     </LinearLayout>
 
