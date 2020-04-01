@@ -1,111 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:background="#ffffff"
-        android:orientation="vertical"
-        android:layout_height="match_parent"
-        android:layout_gravity="center">
-
-        <ImageView
-            android:id="@+id/ivLogo"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="32dp"
-            android:src="@drawable/ic_launcher_background"/>
-
-        <TextView
-            android:id="@+id/tvInicio"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="285dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="5dp"
-            android:fontFamily="@font/roboto"
-            android:text="Inicio de sesión"
-            android:textColor="#693AC2"
-            android:textIsSelectable="false"
-            android:textSize="20dp" />
-
-        <EditText
-            android:id="@+id/etCorreo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginStart="16dp"
-            android:hint="Correo"
-            android:fontFamily="@font/roboto"
-            android:textSize="18dp" />
-
-        <EditText
-            android:id="@+id/etContraseña"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="5dp"
-            android:fontFamily="@font/roboto"
-            android:hint="Contraseña"
-            android:textSize="18dp"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/linearRegis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="12dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:visibility="visible">
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tvSino"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Si no tienes una cuenta:  "
-                android:textColor="#000000"
-                android:textSize="15dp"
-                android:fontFamily="@font/roboto"/>
-
-            <TextView
-                android:id="@+id/tvRegistrate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Registrate"
-                android:textColor="#FF9800"
-                android:fontFamily="@font/roboto"
-                android:textSize="15dp" />
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_marginTop="32dp"/>
 
         </LinearLayout>
+    </ScrollView>
 
-        <Button
-            android:id="@+id/btnIniciar"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FF9800"
-            android:fontFamily="@font/roboto"
-            android:text="Iniciar Sesión"
-            android:textAllCaps="false"
-            android:textColor="#ffff"
-            android:textSize="20dp"
-            android:padding="20dp"
-            android:textAlignment="center"/>
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/tvInicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="283dp"
+                android:fontFamily="@font/roboto"
+                android:text="Inicio de sesión"
+                android:textColor="@color/primary_dark"
+                android:textIsSelectable="false"
+                android:textSize="20dp" />
 
-</ScrollView>
+            <EditText
+                android:id="@+id/etCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:hint="Correo"
+                android:fontFamily="@font/roboto"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etContraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/roboto"
+                android:hint="Contraseña"
+                android:textSize="18dp"/>
+
+            <LinearLayout
+                android:id="@+id/linearRegis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tvSino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Si no tienes una cuenta  "
+                    android:textColor="@color/primary_text"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/roboto"/>
+
+                <TextView
+                    android:id="@+id/tvRegistrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registrate"
+                    android:textColor="@color/accent"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnIniciar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/accent"
+                android:fontFamily="@font/roboto"
+                android:text="Iniciar Sesión"
+                android:textAllCaps="false"
+                android:textColor="@color/icons"
+                android:textSize="15dp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
