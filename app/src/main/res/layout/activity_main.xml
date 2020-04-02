@@ -22,7 +22,7 @@
                 android:id="@+id/ivLogo"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="32dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/ic_launcher_background"
                 android:layout_marginTop="32dp"/>
@@ -58,20 +58,17 @@
             <EditText
                 android:id="@+id/etCorreo"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:layout_marginTop="3dp"
-                android:layout_marginBottom="3dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
                 android:hint="Correo"
-                android:fontFamily="@font/roboto"
-                android:textSize="18dp" />
+                android:fontFamily="@font/roboto"/>
 
             <EditText
                 android:id="@+id/etContraseña"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="5dp"
@@ -84,7 +81,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="12dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:gravity="center"
@@ -105,7 +102,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Registrate"
-                    android:textColor="@color/accent"
+                    android:textColor="@color/primary"
                     android:fontFamily="@font/roboto"
                     android:textSize="15dp" />
 
