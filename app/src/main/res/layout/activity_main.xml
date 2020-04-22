@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,122 +8,126 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/ivLogo"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_marginTop="22dp"
-                android:layout_marginBottom="22dp"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/ic_launcher_background" />
-
-        </LinearLayout>
-    </ScrollView>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="#ffffff"
-            android:orientation="vertical"
-            android:layout_height="wrap_content">
+            android:orientation="vertical">
+            //android:weightSum="1"
 
-            <TextView
-                android:id="@+id/tvInicio"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="2dp"
-                android:layout_marginTop="285dp"
-                android:fontFamily="@font/roboto"
-                android:text="Inicio de sesión"
-                android:textColor="@color/primary_dark"
-                android:textIsSelectable="false"
-                android:textSize="18dp" />
+                android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/etCorreo"
+                <ImageView
+                    android:id="@+id/ivLogo"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_launcher_background"/>
+
+            </RelativeLayout>
+
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="4dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
-                android:hint="Correo"
-                android:fontFamily="@font/roboto"/>
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical">
+                //android:layout_weight="0.3">
 
-            <EditText
-                android:id="@+id/etContraseña"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/roboto"
-                android:hint="Contraseña"
-                android:textSize="18dp"/>
-
-            <LinearLayout
-                android:id="@+id/linearRegis"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:visibility="visible">
-
-                <TextView
-                    android:id="@+id/tvSino"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Si no tienes una cuenta  "
-                    android:textColor="@color/primary_text"
-                    android:textSize="15dp"
-                    android:fontFamily="@font/roboto"/>
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:layout_gravity="bottom">
 
-                <TextView
-                    android:id="@+id/tvRegistrate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Registrate"
-                    android:textColor="@color/primary"
-                    android:fontFamily="@font/roboto"
-                    android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/tvInicio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="2dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Inicio de sesión"
+                        android:textColor="@color/primary_dark"
+                        android:textIsSelectable="false"
+                        android:textSize="18dp" />
 
-            </LinearLayout>
+                    <EditText
+                        android:id="@+id/etCorreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="4dp"
+                        android:fontFamily="@font/roboto"
+                        android:hint="Correo" />
 
-            <Button
-                android:id="@+id/btnIniciar"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@color/accent"
-                android:fontFamily="@font/roboto"
-                android:layout_marginTop="10dp"
-                android:text="Iniciar Sesión"
-                android:textAllCaps="false"
-                android:textColor="@color/icons"
-                android:textSize="15dp"
-                android:textAlignment="center"/>
+                    <EditText
+                        android:id="@+id/etContraseña"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/roboto"
+                        android:hint="Contraseña"
+                        android:textSize="18dp"
+                        android:inputType="textPassword"/>
 
+                    <LinearLayout
+                        android:id="@+id/linearRegis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tvSino"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:text="Si no tienes una cuenta  "
+                            android:textColor="@color/primary_text"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tvRegistrate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:text="Registrate"
+                            android:textColor="@color/primary"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnIniciar"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/accent"
+                        android:fontFamily="@font/roboto"
+                        android:text="Iniciar Sesión"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/icons"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
-    </ScrollView>
-
-</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
