@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/menssages"
+        barColorWhenSelected="@color/primary"
+        icon="@drawable/ic_menssages" />
+    <tab
+        id="@+id/grups"
+        barColorWhenSelected="@color/primary"
+        icon="@drawable/ic_grups"/>
+
+    <tab
+        id="@+id/profile"
+        barColorWhenSelected="@color/primary"
+        icon="@drawable/ic_profile" />
+</tabs>
